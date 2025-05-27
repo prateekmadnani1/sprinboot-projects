@@ -17,4 +17,10 @@ public class HealthController {
         loggerFactory.debug("Health check started {}", variable);
         return "I'm healthy";
     }
+
+    @GetMapping("/test")
+    public String testActuator() {
+        loggerFactory.debug("Health check started");
+        return "test started";
+    }
 }
