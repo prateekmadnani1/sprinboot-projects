@@ -1,0 +1,16 @@
+schema{
+query: Query
+}
+
+type Query{
+
+getAllTickets : [Ticket]
+findTicket(email: String) : Ticket
+}
+
+type Ticket{
+
+id: int
+price: double
+description: String
+}
